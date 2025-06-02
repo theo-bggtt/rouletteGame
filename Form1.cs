@@ -21,12 +21,13 @@ namespace jeuRoulette
             // lblNum
             //
             lblNum.AutoSize = true;
-            lblNum.Location = new Point(29, 0);
+            lblNum.Location = new Point(27, 1);
             lblNum.Name = "lblNum";
+            lblNum.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             lblNum.Size = new Size(36, 15);
             lblNum.TabIndex = 1;
             lblNum.Text = $"{num}";
-            lblNum.TextAlign = ContentAlignment.TopCenter;
+            lblNum.TextAlign = ContentAlignment.MiddleCenter;
             lblNum.ForeColor = Color.White;
             // 
             // pnlNum
@@ -38,7 +39,7 @@ namespace jeuRoulette
             pnlNum.Size = new Size(90, 35);
             pnlNum.TabIndex = 0;
             pnlNum.BorderStyle = BorderStyle.FixedSingle;
-            pnlNum.Padding = new Padding(10);
+            pnlNum.Padding = new Padding(5);
             if (nbRouge.Contains(num))
             {
                 pnlNum.BackColor = Color.Red;
@@ -53,7 +54,7 @@ namespace jeuRoulette
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i <= 37; i++)
+            for (int i = 1; i < 37; i++)
             {
                 flpTableDeJeu.Controls.Add(creeerPanel(i));
             }
