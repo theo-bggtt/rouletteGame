@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             flpTableDeJeu = new FlowLayoutPanel();
             pnlNum = new Panel();
             lblNum = new Label();
@@ -58,6 +59,15 @@
             label11 = new Label();
             panel7 = new Panel();
             label13 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            label15 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            pictureBox4 = new PictureBox();
+            btnLancerBoule = new Button();
+            lblTir = new Label();
             flpTableDeJeu.SuspendLayout();
             pnlNum.SuspendLayout();
             pnl1st12.SuspendLayout();
@@ -73,6 +83,10 @@
             panel4.SuspendLayout();
             panel5.SuspendLayout();
             panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // flpTableDeJeu
@@ -93,6 +107,7 @@
             pnlNum.Size = new Size(90, 35);
             pnlNum.TabIndex = 0;
             pnlNum.Visible = false;
+            pnlNum.Click += pnlNum_Click;
             // 
             // lblNum
             // 
@@ -104,6 +119,7 @@
             lblNum.TabIndex = 1;
             lblNum.Text = "NULL";
             lblNum.TextAlign = ContentAlignment.MiddleCenter;
+            lblNum.Click += lblNum_Click;
             // 
             // pnl1st12
             // 
@@ -387,12 +403,113 @@
             label13.TabIndex = 14;
             label13.Text = "Rouge";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(147, 465);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(51, 50);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(292, 465);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(51, 50);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 10;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(222, 465);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(51, 50);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 11;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.ForeColor = Color.White;
+            label15.Location = new Point(163, 518);
+            label15.Name = "label15";
+            label15.Size = new Size(19, 15);
+            label15.TabIndex = 12;
+            label15.Text = "10";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.ForeColor = Color.White;
+            label16.Location = new Point(237, 518);
+            label16.Name = "label16";
+            label16.Size = new Size(19, 15);
+            label16.TabIndex = 13;
+            label16.Text = "50";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.ForeColor = Color.White;
+            label17.Location = new Point(305, 518);
+            label17.Name = "label17";
+            label17.Size = new Size(25, 15);
+            label17.TabIndex = 14;
+            label17.Text = "100";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(123, 30);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(261, 271);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 15;
+            pictureBox4.TabStop = false;
+            // 
+            // btnLancerBoule
+            // 
+            btnLancerBoule.Location = new Point(192, 411);
+            btnLancerBoule.Name = "btnLancerBoule";
+            btnLancerBoule.Size = new Size(110, 23);
+            btnLancerBoule.TabIndex = 16;
+            btnLancerBoule.Text = "lance la boule";
+            btnLancerBoule.UseVisualStyleBackColor = true;
+            btnLancerBoule.Click += btnLancerBoule_Click;
+            // 
+            // lblTir
+            // 
+            lblTir.AutoSize = true;
+            lblTir.ForeColor = Color.White;
+            lblTir.Location = new Point(225, 326);
+            lblTir.Name = "lblTir";
+            lblTir.Size = new Size(0, 15);
+            lblTir.TabIndex = 17;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 58, 27);
             ClientSize = new Size(984, 561);
+            Controls.Add(lblTir);
+            Controls.Add(btnLancerBoule);
+            Controls.Add(pictureBox4);
+            Controls.Add(label17);
+            Controls.Add(label16);
+            Controls.Add(label15);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(panel7);
             Controls.Add(panel5);
             Controls.Add(panel4);
@@ -439,7 +556,12 @@
             panel5.PerformLayout();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -474,5 +596,14 @@
         private Label label14;
         private Label label11;
         private Label label13;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private Label label15;
+        private Label label16;
+        private Label label17;
+        private PictureBox pictureBox4;
+        private Button btnLancerBoule;
+        private Label lblTir;
     }
 }
