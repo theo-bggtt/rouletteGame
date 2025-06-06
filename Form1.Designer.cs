@@ -32,33 +32,33 @@
             flpTableDeJeu = new FlowLayoutPanel();
             pnlNum = new Panel();
             lblNum = new Label();
-            pnl1st12 = new Panel();
-            label1 = new Label();
-            pnl2nd12 = new Panel();
-            label2 = new Label();
-            pnl3rd12 = new Panel();
-            label3 = new Label();
-            pnlnb0 = new Panel();
-            label4 = new Label();
-            pnl2to11 = new Panel();
-            label5 = new Label();
-            pnl2to13 = new Panel();
-            label6 = new Label();
-            pnl2to12 = new Panel();
-            label7 = new Label();
+            pnldouzaine1 = new Panel();
+            lbldouzaine1 = new Label();
+            pnldouzaine2 = new Panel();
+            lbldouzaine2 = new Label();
+            pnldouzaine3 = new Panel();
+            lbldouzaine3 = new Label();
+            pnl0 = new Panel();
+            lbl0 = new Label();
+            pnlcolonne1 = new Panel();
+            lblcolonne1 = new Label();
+            pnlcolonne3 = new Panel();
+            lblcolonne3 = new Label();
+            pnlcolonne2 = new Panel();
+            lblcolonne2 = new Label();
             panel1 = new Panel();
             label8 = new Label();
             panel2 = new Panel();
             label10 = new Label();
             label9 = new Label();
-            panel3 = new Panel();
-            label12 = new Label();
-            panel4 = new Panel();
-            label14 = new Label();
-            panel5 = new Panel();
-            label11 = new Label();
-            panel7 = new Panel();
-            label13 = new Label();
+            pnlimpair = new Panel();
+            lblimpair = new Label();
+            pnlnoir = new Panel();
+            lblnoir = new Label();
+            pnlpair = new Panel();
+            lblpair = new Label();
+            pnlrouge = new Panel();
+            lblrouge = new Label();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -68,21 +68,22 @@
             pictureBox4 = new PictureBox();
             btnLancerBoule = new Button();
             lblTir = new Label();
+            lblBalance = new Label();
             flpTableDeJeu.SuspendLayout();
             pnlNum.SuspendLayout();
-            pnl1st12.SuspendLayout();
-            pnl2nd12.SuspendLayout();
-            pnl3rd12.SuspendLayout();
-            pnlnb0.SuspendLayout();
-            pnl2to11.SuspendLayout();
-            pnl2to13.SuspendLayout();
-            pnl2to12.SuspendLayout();
+            pnldouzaine1.SuspendLayout();
+            pnldouzaine2.SuspendLayout();
+            pnldouzaine3.SuspendLayout();
+            pnl0.SuspendLayout();
+            pnlcolonne1.SuspendLayout();
+            pnlcolonne3.SuspendLayout();
+            pnlcolonne2.SuspendLayout();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            panel3.SuspendLayout();
-            panel4.SuspendLayout();
-            panel5.SuspendLayout();
-            panel7.SuspendLayout();
+            pnlimpair.SuspendLayout();
+            pnlnoir.SuspendLayout();
+            pnlpair.SuspendLayout();
+            pnlrouge.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -121,154 +122,168 @@
             lblNum.TextAlign = ContentAlignment.MiddleCenter;
             lblNum.Click += lblNum_Click;
             // 
-            // pnl1st12
+            // pnldouzaine1
             // 
-            pnl1st12.BorderStyle = BorderStyle.FixedSingle;
-            pnl1st12.Controls.Add(label1);
-            pnl1st12.Location = new Point(606, 61);
-            pnl1st12.Name = "pnl1st12";
-            pnl1st12.Size = new Size(90, 140);
-            pnl1st12.TabIndex = 1;
+            pnldouzaine1.BorderStyle = BorderStyle.FixedSingle;
+            pnldouzaine1.Controls.Add(lbldouzaine1);
+            pnldouzaine1.Location = new Point(606, 61);
+            pnldouzaine1.Name = "pnldouzaine1";
+            pnldouzaine1.Size = new Size(90, 140);
+            pnldouzaine1.TabIndex = 1;
+            pnldouzaine1.Click += miserPnl_Click;
             // 
-            // label1
+            // lbldouzaine1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(10, 55);
-            label1.Name = "label1";
-            label1.Size = new Size(68, 25);
-            label1.TabIndex = 3;
-            label1.Text = "1er 12";
+            lbldouzaine1.AutoSize = true;
+            lbldouzaine1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lbldouzaine1.ForeColor = Color.White;
+            lbldouzaine1.Location = new Point(10, 55);
+            lbldouzaine1.Name = "lbldouzaine1";
+            lbldouzaine1.Size = new Size(68, 25);
+            lbldouzaine1.TabIndex = 3;
+            lbldouzaine1.Text = "1er 12";
+            lbldouzaine1.Click += miserLbl_Click;
             // 
-            // pnl2nd12
+            // pnldouzaine2
             // 
-            pnl2nd12.BorderStyle = BorderStyle.FixedSingle;
-            pnl2nd12.Controls.Add(label2);
-            pnl2nd12.Location = new Point(606, 201);
-            pnl2nd12.Name = "pnl2nd12";
-            pnl2nd12.Size = new Size(90, 140);
-            pnl2nd12.TabIndex = 3;
+            pnldouzaine2.BorderStyle = BorderStyle.FixedSingle;
+            pnldouzaine2.Controls.Add(lbldouzaine2);
+            pnldouzaine2.Location = new Point(606, 201);
+            pnldouzaine2.Name = "pnldouzaine2";
+            pnldouzaine2.Size = new Size(90, 140);
+            pnldouzaine2.TabIndex = 3;
+            pnldouzaine2.Click += miserPnl_Click;
             // 
-            // label2
+            // lbldouzaine2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(14, 55);
-            label2.Name = "label2";
-            label2.Size = new Size(60, 25);
-            label2.TabIndex = 4;
-            label2.Text = "2e 12";
+            lbldouzaine2.AutoSize = true;
+            lbldouzaine2.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lbldouzaine2.ForeColor = Color.White;
+            lbldouzaine2.Location = new Point(14, 55);
+            lbldouzaine2.Name = "lbldouzaine2";
+            lbldouzaine2.Size = new Size(60, 25);
+            lbldouzaine2.TabIndex = 4;
+            lbldouzaine2.Text = "2e 12";
+            lbldouzaine2.Click += miserLbl_Click;
             // 
-            // pnl3rd12
+            // pnldouzaine3
             // 
-            pnl3rd12.BorderStyle = BorderStyle.FixedSingle;
-            pnl3rd12.Controls.Add(label3);
-            pnl3rd12.Location = new Point(606, 341);
-            pnl3rd12.Name = "pnl3rd12";
-            pnl3rd12.Size = new Size(90, 140);
-            pnl3rd12.TabIndex = 4;
+            pnldouzaine3.BorderStyle = BorderStyle.FixedSingle;
+            pnldouzaine3.Controls.Add(lbldouzaine3);
+            pnldouzaine3.Location = new Point(606, 341);
+            pnldouzaine3.Name = "pnldouzaine3";
+            pnldouzaine3.Size = new Size(90, 140);
+            pnldouzaine3.TabIndex = 4;
+            pnldouzaine3.Click += miserPnl_Click;
             // 
-            // label3
+            // lbldouzaine3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(14, 55);
-            label3.Name = "label3";
-            label3.Size = new Size(60, 25);
-            label3.TabIndex = 5;
-            label3.Text = "3e 12";
+            lbldouzaine3.AutoSize = true;
+            lbldouzaine3.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lbldouzaine3.ForeColor = Color.White;
+            lbldouzaine3.Location = new Point(14, 55);
+            lbldouzaine3.Name = "lbldouzaine3";
+            lbldouzaine3.Size = new Size(60, 25);
+            lbldouzaine3.TabIndex = 5;
+            lbldouzaine3.Text = "3e 12";
+            lbldouzaine3.Click += miserLbl_Click;
             // 
-            // pnlnb0
+            // pnl0
             // 
-            pnlnb0.BackColor = Color.Green;
-            pnlnb0.BorderStyle = BorderStyle.FixedSingle;
-            pnlnb0.Controls.Add(label4);
-            pnlnb0.Location = new Point(696, 26);
-            pnlnb0.Margin = new Padding(0);
-            pnlnb0.Name = "pnlnb0";
-            pnlnb0.Size = new Size(270, 35);
-            pnlnb0.TabIndex = 2;
+            pnl0.BackColor = Color.Green;
+            pnl0.BorderStyle = BorderStyle.FixedSingle;
+            pnl0.Controls.Add(lbl0);
+            pnl0.Location = new Point(696, 26);
+            pnl0.Margin = new Padding(0);
+            pnl0.Name = "pnl0";
+            pnl0.Size = new Size(270, 35);
+            pnl0.TabIndex = 2;
+            pnl0.Click += pnlNum_Click;
             // 
-            // label4
+            // lbl0
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(124, 3);
-            label4.Name = "label4";
-            label4.Size = new Size(23, 25);
-            label4.TabIndex = 1;
-            label4.Text = "0";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
+            lbl0.AutoSize = true;
+            lbl0.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lbl0.ForeColor = Color.White;
+            lbl0.Location = new Point(124, 3);
+            lbl0.Name = "lbl0";
+            lbl0.Size = new Size(23, 25);
+            lbl0.TabIndex = 1;
+            lbl0.Text = "0";
+            lbl0.TextAlign = ContentAlignment.MiddleCenter;
+            lbl0.Click += lblNum_Click;
             // 
-            // pnl2to11
+            // pnlcolonne1
             // 
-            pnl2to11.BorderStyle = BorderStyle.FixedSingle;
-            pnl2to11.Controls.Add(label5);
-            pnl2to11.Location = new Point(696, 480);
-            pnl2to11.Margin = new Padding(0);
-            pnl2to11.Name = "pnl2to11";
-            pnl2to11.Size = new Size(90, 35);
-            pnl2to11.TabIndex = 2;
+            pnlcolonne1.BorderStyle = BorderStyle.FixedSingle;
+            pnlcolonne1.Controls.Add(lblcolonne1);
+            pnlcolonne1.Location = new Point(696, 480);
+            pnlcolonne1.Margin = new Padding(0);
+            pnlcolonne1.Name = "pnlcolonne1";
+            pnlcolonne1.Size = new Size(90, 35);
+            pnlcolonne1.TabIndex = 2;
+            pnlcolonne1.Click += miserPnl_Click;
             // 
-            // label5
+            // lblcolonne1
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 11F);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(30, 6);
-            label5.Name = "label5";
-            label5.Size = new Size(28, 20);
-            label5.TabIndex = 1;
-            label5.Text = "2:1";
-            label5.TextAlign = ContentAlignment.MiddleCenter;
+            lblcolonne1.AutoSize = true;
+            lblcolonne1.Font = new Font("Segoe UI", 11F);
+            lblcolonne1.ForeColor = Color.White;
+            lblcolonne1.Location = new Point(30, 6);
+            lblcolonne1.Name = "lblcolonne1";
+            lblcolonne1.Size = new Size(28, 20);
+            lblcolonne1.TabIndex = 1;
+            lblcolonne1.Text = "2:1";
+            lblcolonne1.TextAlign = ContentAlignment.MiddleCenter;
+            lblcolonne1.Click += miserLbl_Click;
             // 
-            // pnl2to13
+            // pnlcolonne3
             // 
-            pnl2to13.BorderStyle = BorderStyle.FixedSingle;
-            pnl2to13.Controls.Add(label6);
-            pnl2to13.Location = new Point(876, 480);
-            pnl2to13.Margin = new Padding(0);
-            pnl2to13.Name = "pnl2to13";
-            pnl2to13.Size = new Size(90, 35);
-            pnl2to13.TabIndex = 3;
+            pnlcolonne3.BorderStyle = BorderStyle.FixedSingle;
+            pnlcolonne3.Controls.Add(lblcolonne3);
+            pnlcolonne3.Location = new Point(876, 480);
+            pnlcolonne3.Margin = new Padding(0);
+            pnlcolonne3.Name = "pnlcolonne3";
+            pnlcolonne3.Size = new Size(90, 35);
+            pnlcolonne3.TabIndex = 3;
+            pnlcolonne3.Click += miserPnl_Click;
             // 
-            // label6
+            // lblcolonne3
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 11F);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(30, 6);
-            label6.Name = "label6";
-            label6.Size = new Size(28, 20);
-            label6.TabIndex = 1;
-            label6.Text = "2:1";
-            label6.TextAlign = ContentAlignment.MiddleCenter;
+            lblcolonne3.AutoSize = true;
+            lblcolonne3.Font = new Font("Segoe UI", 11F);
+            lblcolonne3.ForeColor = Color.White;
+            lblcolonne3.Location = new Point(30, 6);
+            lblcolonne3.Name = "lblcolonne3";
+            lblcolonne3.Size = new Size(28, 20);
+            lblcolonne3.TabIndex = 1;
+            lblcolonne3.Text = "2:1";
+            lblcolonne3.TextAlign = ContentAlignment.MiddleCenter;
+            lblcolonne3.Click += miserLbl_Click;
             // 
-            // pnl2to12
+            // pnlcolonne2
             // 
-            pnl2to12.BorderStyle = BorderStyle.FixedSingle;
-            pnl2to12.Controls.Add(label7);
-            pnl2to12.Location = new Point(786, 480);
-            pnl2to12.Margin = new Padding(0);
-            pnl2to12.Name = "pnl2to12";
-            pnl2to12.Size = new Size(90, 35);
-            pnl2to12.TabIndex = 4;
+            pnlcolonne2.BorderStyle = BorderStyle.FixedSingle;
+            pnlcolonne2.Controls.Add(lblcolonne2);
+            pnlcolonne2.Location = new Point(786, 480);
+            pnlcolonne2.Margin = new Padding(0);
+            pnlcolonne2.Name = "pnlcolonne2";
+            pnlcolonne2.Size = new Size(90, 35);
+            pnlcolonne2.TabIndex = 4;
+            pnlcolonne2.Click += miserPnl_Click;
             // 
-            // label7
+            // lblcolonne2
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 11F);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(30, 6);
-            label7.Name = "label7";
-            label7.Size = new Size(28, 20);
-            label7.TabIndex = 1;
-            label7.Text = "2:1";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
+            lblcolonne2.AutoSize = true;
+            lblcolonne2.Font = new Font("Segoe UI", 11F);
+            lblcolonne2.ForeColor = Color.White;
+            lblcolonne2.Location = new Point(30, 6);
+            lblcolonne2.Name = "lblcolonne2";
+            lblcolonne2.Size = new Size(28, 20);
+            lblcolonne2.TabIndex = 1;
+            lblcolonne2.Text = "2:1";
+            lblcolonne2.TextAlign = ContentAlignment.MiddleCenter;
+            lblcolonne2.Click += miserLbl_Click;
             // 
             // panel1
             // 
@@ -321,87 +336,95 @@
             label9.TabIndex = 10;
             label9.Text = "19 à 36";
             // 
-            // panel3
+            // pnlimpair
             // 
-            panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Controls.Add(label12);
-            panel3.Location = new Point(510, 341);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(90, 70);
-            panel3.TabIndex = 7;
+            pnlimpair.BorderStyle = BorderStyle.FixedSingle;
+            pnlimpair.Controls.Add(lblimpair);
+            pnlimpair.Location = new Point(510, 341);
+            pnlimpair.Name = "pnlimpair";
+            pnlimpair.Size = new Size(90, 70);
+            pnlimpair.TabIndex = 7;
+            pnlimpair.Click += miserPnl_Click;
             // 
-            // label12
+            // lblimpair
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label12.ForeColor = Color.White;
-            label12.Location = new Point(9, 20);
-            label12.Name = "label12";
-            label12.Size = new Size(70, 25);
-            label12.TabIndex = 13;
-            label12.Text = "Impair";
+            lblimpair.AutoSize = true;
+            lblimpair.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblimpair.ForeColor = Color.White;
+            lblimpair.Location = new Point(9, 20);
+            lblimpair.Name = "lblimpair";
+            lblimpair.Size = new Size(70, 25);
+            lblimpair.TabIndex = 13;
+            lblimpair.Text = "Impair";
+            lblimpair.Click += miserLbl_Click;
             // 
-            // panel4
+            // pnlnoir
             // 
-            panel4.BackColor = Color.Black;
-            panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Controls.Add(label14);
-            panel4.Location = new Point(510, 271);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(90, 70);
-            panel4.TabIndex = 8;
+            pnlnoir.BackColor = Color.Black;
+            pnlnoir.BorderStyle = BorderStyle.FixedSingle;
+            pnlnoir.Controls.Add(lblnoir);
+            pnlnoir.Location = new Point(510, 271);
+            pnlnoir.Name = "pnlnoir";
+            pnlnoir.Size = new Size(90, 70);
+            pnlnoir.TabIndex = 8;
+            pnlnoir.Click += miserPnl_Click;
             // 
-            // label14
+            // lblnoir
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label14.ForeColor = Color.White;
-            label14.Location = new Point(18, 21);
-            label14.Name = "label14";
-            label14.Size = new Size(52, 25);
-            label14.TabIndex = 15;
-            label14.Text = "Noir";
+            lblnoir.AutoSize = true;
+            lblnoir.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblnoir.ForeColor = Color.White;
+            lblnoir.Location = new Point(18, 21);
+            lblnoir.Name = "lblnoir";
+            lblnoir.Size = new Size(52, 25);
+            lblnoir.TabIndex = 15;
+            lblnoir.Text = "Noir";
+            lblnoir.Click += miserLbl_Click;
             // 
-            // panel5
+            // pnlpair
             // 
-            panel5.BorderStyle = BorderStyle.FixedSingle;
-            panel5.Controls.Add(label11);
-            panel5.Location = new Point(510, 131);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(90, 70);
-            panel5.TabIndex = 8;
+            pnlpair.BorderStyle = BorderStyle.FixedSingle;
+            pnlpair.Controls.Add(lblpair);
+            pnlpair.Location = new Point(510, 131);
+            pnlpair.Name = "pnlpair";
+            pnlpair.Size = new Size(90, 70);
+            pnlpair.TabIndex = 8;
+            pnlpair.Click += miserPnl_Click;
             // 
-            // label11
+            // lblpair
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(21, 20);
-            label11.Name = "label11";
-            label11.Size = new Size(47, 25);
-            label11.TabIndex = 12;
-            label11.Text = "Pair";
+            lblpair.AutoSize = true;
+            lblpair.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblpair.ForeColor = Color.White;
+            lblpair.Location = new Point(21, 20);
+            lblpair.Name = "lblpair";
+            lblpair.Size = new Size(47, 25);
+            lblpair.TabIndex = 12;
+            lblpair.Text = "Pair";
+            lblpair.Click += miserLbl_Click;
             // 
-            // panel7
+            // pnlrouge
             // 
-            panel7.BackColor = Color.Red;
-            panel7.BorderStyle = BorderStyle.FixedSingle;
-            panel7.Controls.Add(label13);
-            panel7.Location = new Point(510, 201);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(90, 70);
-            panel7.TabIndex = 8;
+            pnlrouge.BackColor = Color.Red;
+            pnlrouge.BorderStyle = BorderStyle.FixedSingle;
+            pnlrouge.Controls.Add(lblrouge);
+            pnlrouge.Location = new Point(510, 201);
+            pnlrouge.Name = "pnlrouge";
+            pnlrouge.Size = new Size(90, 70);
+            pnlrouge.TabIndex = 8;
+            pnlrouge.Click += miserPnl_Click;
             // 
-            // label13
+            // lblrouge
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label13.ForeColor = Color.White;
-            label13.Location = new Point(9, 20);
-            label13.Name = "label13";
-            label13.Size = new Size(70, 25);
-            label13.TabIndex = 14;
-            label13.Text = "Rouge";
+            lblrouge.AutoSize = true;
+            lblrouge.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblrouge.ForeColor = Color.White;
+            lblrouge.Location = new Point(9, 20);
+            lblrouge.Name = "lblrouge";
+            lblrouge.Size = new Size(70, 25);
+            lblrouge.TabIndex = 14;
+            lblrouge.Text = "Rouge";
+            lblrouge.Click += miserLbl_Click;
             // 
             // pictureBox1
             // 
@@ -495,12 +518,24 @@
             lblTir.Size = new Size(0, 15);
             lblTir.TabIndex = 17;
             // 
+            // lblBalance
+            // 
+            lblBalance.AutoSize = true;
+            lblBalance.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblBalance.ForeColor = Color.White;
+            lblBalance.Location = new Point(405, 9);
+            lblBalance.Name = "lblBalance";
+            lblBalance.Size = new Size(141, 25);
+            lblBalance.TabIndex = 18;
+            lblBalance.Text = "Compte : 1000";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 58, 27);
             ClientSize = new Size(984, 561);
+            Controls.Add(lblBalance);
             Controls.Add(lblTir);
             Controls.Add(btnLancerBoule);
             Controls.Add(pictureBox4);
@@ -510,52 +545,54 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Controls.Add(panel7);
-            Controls.Add(panel5);
-            Controls.Add(panel4);
-            Controls.Add(panel3);
+            Controls.Add(pnlrouge);
+            Controls.Add(pnlpair);
+            Controls.Add(pnlnoir);
+            Controls.Add(pnlimpair);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(pnl2to12);
-            Controls.Add(pnl2to13);
-            Controls.Add(pnl2to11);
-            Controls.Add(pnlnb0);
-            Controls.Add(pnl3rd12);
-            Controls.Add(pnl2nd12);
-            Controls.Add(pnl1st12);
+            Controls.Add(pnlcolonne2);
+            Controls.Add(pnlcolonne3);
+            Controls.Add(pnlcolonne1);
+            Controls.Add(pnl0);
+            Controls.Add(pnldouzaine3);
+            Controls.Add(pnldouzaine2);
+            Controls.Add(pnldouzaine1);
             Controls.Add(flpTableDeJeu);
+            MaximizeBox = false;
             Name = "Form1";
+            SizeGripStyle = SizeGripStyle.Show;
             Text = "Form1";
             Load += Form1_Load;
             flpTableDeJeu.ResumeLayout(false);
             pnlNum.ResumeLayout(false);
             pnlNum.PerformLayout();
-            pnl1st12.ResumeLayout(false);
-            pnl1st12.PerformLayout();
-            pnl2nd12.ResumeLayout(false);
-            pnl2nd12.PerformLayout();
-            pnl3rd12.ResumeLayout(false);
-            pnl3rd12.PerformLayout();
-            pnlnb0.ResumeLayout(false);
-            pnlnb0.PerformLayout();
-            pnl2to11.ResumeLayout(false);
-            pnl2to11.PerformLayout();
-            pnl2to13.ResumeLayout(false);
-            pnl2to13.PerformLayout();
-            pnl2to12.ResumeLayout(false);
-            pnl2to12.PerformLayout();
+            pnldouzaine1.ResumeLayout(false);
+            pnldouzaine1.PerformLayout();
+            pnldouzaine2.ResumeLayout(false);
+            pnldouzaine2.PerformLayout();
+            pnldouzaine3.ResumeLayout(false);
+            pnldouzaine3.PerformLayout();
+            pnl0.ResumeLayout(false);
+            pnl0.PerformLayout();
+            pnlcolonne1.ResumeLayout(false);
+            pnlcolonne1.PerformLayout();
+            pnlcolonne3.ResumeLayout(false);
+            pnlcolonne3.PerformLayout();
+            pnlcolonne2.ResumeLayout(false);
+            pnlcolonne2.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            panel7.ResumeLayout(false);
-            panel7.PerformLayout();
+            pnlimpair.ResumeLayout(false);
+            pnlimpair.PerformLayout();
+            pnlnoir.ResumeLayout(false);
+            pnlnoir.PerformLayout();
+            pnlpair.ResumeLayout(false);
+            pnlpair.PerformLayout();
+            pnlrouge.ResumeLayout(false);
+            pnlrouge.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -569,33 +606,33 @@
         private FlowLayoutPanel flpTableDeJeu;
         private Panel pnlNum;
         private Label lblNum;
-        private Panel pnl1st12;
-        private Panel pnl2nd12;
-        private Panel pnl3rd12;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Panel pnlnb0;
-        private Label label4;
-        private Panel pnl2to11;
-        private Label label5;
-        private Panel pnl2to13;
-        private Label label6;
-        private Panel pnl2to12;
-        private Label label7;
+        private Panel pnldouzaine1;
+        private Panel pnldouzaine2;
+        private Panel pnldouzaine3;
+        private Label lbldouzaine1;
+        private Label lbldouzaine2;
+        private Label lbldouzaine3;
+        private Panel pnl0;
+        private Label lbl0;
+        private Panel pnlcolonne1;
+        private Label lblcolonne1;
+        private Panel pnlcolonne3;
+        private Label lblcolonne3;
+        private Panel pnlcolonne2;
+        private Label lblcolonne2;
         private Panel panel1;
         private Panel panel2;
-        private Panel panel3;
-        private Panel panel4;
-        private Panel panel5;
-        private Panel panel7;
+        private Panel pnlimpair;
+        private Panel pnlnoir;
+        private Panel pnlpair;
+        private Panel pnlrouge;
         private Label label8;
         private Label label10;
         private Label label9;
-        private Label label12;
-        private Label label14;
-        private Label label11;
-        private Label label13;
+        private Label lblimpair;
+        private Label lblnoir;
+        private Label lblpair;
+        private Label lblrouge;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
@@ -605,5 +642,6 @@
         private PictureBox pictureBox4;
         private Button btnLancerBoule;
         private Label lblTir;
+        private Label lblBalance;
     }
 }
