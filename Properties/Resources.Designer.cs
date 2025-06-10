@@ -63,6 +63,36 @@ namespace jeuRoulette.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap jeton10 {
+            get {
+                object obj = ResourceManager.GetObject("jeton10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jeton100 {
+            get {
+                object obj = ResourceManager.GetObject("jeton100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jeton50 {
+            get {
+                object obj = ResourceManager.GetObject("jeton50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap roulettebougepas {
             get {
                 object obj = ResourceManager.GetObject("roulettebougepas", resourceCulture);

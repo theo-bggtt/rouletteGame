@@ -37,9 +37,9 @@ namespace jeuRoulette
             lblNum.TextAlign = ContentAlignment.MiddleCenter;
             lblNum.ForeColor = Color.White;
             lblNum.Click += new EventHandler(lblNum_Click);
-            // 
+            //
             // pnlNum
-            // 
+            //
             pnlNum.Controls.Add(lblNum);
             pnlNum.Location = new Point(0, 0);
             pnlNum.Margin = new Padding(0);
@@ -115,6 +115,7 @@ namespace jeuRoulette
                 paris.Add(num, montant);
                 Console.WriteLine($"Pari ajouté : {num} - Montant : {montant}");
             }
+            AjouterJetonlbl(sender, montant);
         }
 
         private void pnlNum_Click(object sender, EventArgs e)
@@ -154,7 +155,66 @@ namespace jeuRoulette
                 }
                 paris.Add(num, montant);
                 Console.WriteLine($"Pari ajouté : {num} - Montant : {montant}");
+                AjouterJeton(sender, montant);
             }
+        }
+
+
+        private void AjouterJeton(object sender, int montant)
+        {
+            Panel pnl = (Panel)sender;
+            PictureBox jeton = new PictureBox();
+            int nbparie = paris[Convert.ToInt32(pnl.Name)];
+
+            switch (montant)
+            {
+                case 10:
+                    jeton.Image = Properties.Resources.jeton10;
+                    break;
+                case 50:
+                    jeton.Image = Properties.Resources.jeton50;
+                    break;
+                case 100:
+                    jeton.Image = Properties.Resources.jeton100;
+                    break;
+                default:
+                    MessageBox.Show("Montant de pari non reconnu.");
+                    return;
+            }
+            jeton.SizeMode = PictureBoxSizeMode.StretchImage;
+            jeton.Size = new Size(15, 15);
+            jeton.Location = new Point(2*nbparie, 2*nbparie);
+            jeton.BackColor = Color.Transparent;
+            pnl.Controls.Add(jeton);
+        }
+
+
+        private void AjouterJetonlbl(object sender, int montant)
+        {
+            Label lbl = (Label)sender;
+            Panel pnl = (Panel)lbl.Parent;
+
+            PictureBox jeton = new PictureBox();
+            switch (montant)
+            {
+                case 10:
+                    jeton.Image = Properties.Resources.jeton10;
+                    break;
+                case 50:
+                    jeton.Image = Properties.Resources.jeton50;
+                    break;
+                case 100:
+                    jeton.Image = Properties.Resources.jeton100;
+                    break;
+                default:
+                    MessageBox.Show("Montant de pari non reconnu.");
+                    return;
+            }
+            jeton.SizeMode = PictureBoxSizeMode.StretchImage;
+            jeton.Size = new Size(15, 15);
+            jeton.Location = new Point(2, 2);
+            jeton.BackColor = Color.Transparent;
+            pnl.Controls.Add(jeton);
         }
 
         private void miserLbl_Click(object sender, EventArgs e)
@@ -210,6 +270,7 @@ namespace jeuRoulette
                     Console.WriteLine($"Pari mis : {montant} sur Colonne 3");
                     break;
             }
+            AjouterJetonlbl(sender, montant);
         }
 
         private void miserPnl_Click(object sender, EventArgs e)
@@ -265,6 +326,7 @@ namespace jeuRoulette
                     Console.WriteLine($"Pari mis : {montant} sur Colonne 3");
                     break;
             }
+            AjouterJeton(sender, montant);
         }
 
         private async void btnLancerBoule_Click(object sender, EventArgs e)
