@@ -46,11 +46,6 @@
             lblcolonne3 = new Label();
             pnlcolonne2 = new Panel();
             lblcolonne2 = new Label();
-            panel1 = new Panel();
-            label8 = new Label();
-            panel2 = new Panel();
-            label10 = new Label();
-            label9 = new Label();
             pnlimpair = new Panel();
             lblimpair = new Label();
             pnlnoir = new Panel();
@@ -69,6 +64,7 @@
             btnLancerBoule = new Button();
             lblTir = new Label();
             lblBalance = new Label();
+            tbxLog = new TextBox();
             flpTableDeJeu.SuspendLayout();
             pnlNum.SuspendLayout();
             pnldouzaine1.SuspendLayout();
@@ -78,8 +74,6 @@
             pnlcolonne1.SuspendLayout();
             pnlcolonne3.SuspendLayout();
             pnlcolonne2.SuspendLayout();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
             pnlimpair.SuspendLayout();
             pnlnoir.SuspendLayout();
             pnlpair.SuspendLayout();
@@ -97,7 +91,6 @@
             flpTableDeJeu.Name = "flpTableDeJeu";
             flpTableDeJeu.Size = new Size(270, 420);
             flpTableDeJeu.TabIndex = 0;
-            flpTableDeJeu.Paint += flpTableDeJeu_Paint;
             // 
             // pnlNum
             // 
@@ -284,57 +277,6 @@
             lblcolonne2.Text = "2:1";
             lblcolonne2.TextAlign = ContentAlignment.MiddleCenter;
             lblcolonne2.Click += miserLbl_Click;
-            // 
-            // panel1
-            // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(label8);
-            panel1.Location = new Point(510, 61);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(90, 70);
-            panel1.TabIndex = 5;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(12, 21);
-            label8.Name = "label8";
-            label8.Size = new Size(65, 25);
-            label8.TabIndex = 9;
-            label8.Text = "1 à 18";
-            // 
-            // panel2
-            // 
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(label10);
-            panel2.Controls.Add(label9);
-            panel2.Location = new Point(510, 411);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(90, 70);
-            panel2.TabIndex = 6;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(6, 20);
-            label10.Name = "label10";
-            label10.Size = new Size(76, 25);
-            label10.TabIndex = 11;
-            label10.Text = "19 à 36";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(25, 27);
-            label9.Name = "label9";
-            label9.Size = new Size(43, 15);
-            label9.TabIndex = 10;
-            label9.Text = "19 à 36";
             // 
             // pnlimpair
             // 
@@ -529,12 +471,25 @@
             lblBalance.TabIndex = 18;
             lblBalance.Text = "Compte : 1000";
             // 
+            // tbxLog
+            // 
+            tbxLog.BackColor = Color.Black;
+            tbxLog.BorderStyle = BorderStyle.None;
+            tbxLog.ForeColor = Color.White;
+            tbxLog.Location = new Point(123, 298);
+            tbxLog.Multiline = true;
+            tbxLog.Name = "tbxLog";
+            tbxLog.Size = new Size(261, 107);
+            tbxLog.TabIndex = 19;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 58, 27);
             ClientSize = new Size(984, 561);
+            ControlBox = false;
+            Controls.Add(tbxLog);
             Controls.Add(lblBalance);
             Controls.Add(lblTir);
             Controls.Add(btnLancerBoule);
@@ -549,8 +504,6 @@
             Controls.Add(pnlpair);
             Controls.Add(pnlnoir);
             Controls.Add(pnlimpair);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
             Controls.Add(pnlcolonne2);
             Controls.Add(pnlcolonne3);
             Controls.Add(pnlcolonne1);
@@ -581,10 +534,6 @@
             pnlcolonne3.PerformLayout();
             pnlcolonne2.ResumeLayout(false);
             pnlcolonne2.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             pnlimpair.ResumeLayout(false);
             pnlimpair.PerformLayout();
             pnlnoir.ResumeLayout(false);
@@ -620,15 +569,10 @@
         private Label lblcolonne3;
         private Panel pnlcolonne2;
         private Label lblcolonne2;
-        private Panel panel1;
-        private Panel panel2;
         private Panel pnlimpair;
         private Panel pnlnoir;
         private Panel pnlpair;
         private Panel pnlrouge;
-        private Label label8;
-        private Label label10;
-        private Label label9;
         private Label lblimpair;
         private Label lblnoir;
         private Label lblpair;
@@ -643,5 +587,6 @@
         private Button btnLancerBoule;
         private Label lblTir;
         private Label lblBalance;
+        private TextBox tbxLog;
     }
 }
